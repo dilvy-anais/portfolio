@@ -3,6 +3,14 @@
   font-family: calibri;
   src: url("./assets/policies/calibri-font-family/calibri-regular.ttf")
 }
+@keyframes bounce{
+  from{
+    transform: translateY(0);
+  }
+  to{
+    transform: translateY(-5px)
+  }
+}
 html,body
 {
   font-family: calibri,sans-serif;
