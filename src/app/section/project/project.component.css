@@ -1,0 +1,65 @@
+section
+{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 10fr;
+  grid-row-gap: 1.5rem;
+}
+h1
+{
+  grid-area: 1 / 2 / 2 / 3;
+  width:100%;
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: "Bebas Neue",sans-serif;
+  color:#616b4c;
+}
+#all-project
+{
+  grid-area: 2 / 2 / 3 / 3;
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(4,1fr);
+}
+.project-card
+{
+  grid-area: 1 / 1 / 2 / 2;
+  width:100%;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 15px;
+
+}
+.project-img
+{
+  height: 100%;
+  width: 100%;
+  border-radius:15px;
+}
+.project-body
+{
+  display: grid;
+  align-items: center;
+  text-align: center;
+  position: absolute; /* Position the background text */
+  top:0;/* At the bottom. Use top:0 to append it to the top */
+  background-color: transparent; /* Black background with 0.5 opacity */
+  color: transparent; /* Grey text */
+  width: 100%; /* Full width */
+  border-radius: 15px;
+  height: 100%;
+  transition-property: background-color,color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+.project-body:hover
+{
+  background-color: rgba(71,49,38,0.5);
+  color: #EFEBE0;
+  transition-property: background-color,color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+

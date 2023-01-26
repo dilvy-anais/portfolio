@@ -3,6 +3,7 @@
   font-family: calibri;
   src: url("./assets/policies/calibri-font-family/calibri-regular.ttf")
 }
+
 @keyframes bounce{
   from{
     transform: translateY(0);
@@ -26,13 +27,13 @@ ul
 }
 .underline {
   position: relative;
-  color: #000;
+  color: #93614F;
   text-decoration: none;
   padding:15px
 }
 
 .underline:hover {
-  color: #000;
+  color: #93614F;
 }
 
 .underline::before {
@@ -43,7 +44,7 @@ ul
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: #93614F;
   transform: scaleX(0);
   transition: transform 0.3s ease-in-out;
 }

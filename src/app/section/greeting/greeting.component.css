@@ -9,7 +9,7 @@ section
   background-repeat: no-repeat;
   background-size: 100% 100%;
   align-items: center;
-  font-family: calibri,sans-serif;
+  font-family: "Bebas Neue",sans-serif;
   color: #93614F;
 }
 #greeting-section
@@ -18,6 +18,7 @@ section
 }
 h1
 {
+
   font-size: 3rem;
 }
 p{
