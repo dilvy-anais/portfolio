@@ -1,9 +1,7 @@
 <header>
   <div id="navbar-section">
     <ul>
-      <li><a class="underline">HOME</a></li>
-      <li><a class="underline">PROJET</a></li>
-      <li><a class="underline">CONTACT</a></li>
+      <li *ngFor="let item of content?.header"><a class="underline">{{item | uppercase}}</a></li>
     </ul>
   </div>
   <div id="langage-section">
