@@ -1,4 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import {LoadService} from "../../services/load.service";
+import {JSONFile} from "@angular/cli/src/utilities/json-file";
+
+interface Data {
+  header: Array<string>;
+}
 
 
 @Component({
@@ -8,11 +14,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  public content: Data | undefined;
 
-  constructor(){
-
+  constructor(private service : LoadService){
+    this.content = this.service.loadData();
   }
-
   ngOnInit(): void {
 
 

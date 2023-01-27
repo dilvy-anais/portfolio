@@ -1,10 +1,10 @@
 <section>
   <h1>Mon travail</h1>
   <div id="all-project">
-    <article class="project-card">
-      <img class="project-img" src="../../../assets/img/sensibilisation.jpg">
+    <article *ngFor="let item of data" class="project-card" style="grid-area:{{item.style.area}};">
+      <img class="project-img" src="{{item?.image}}">
       <div class="project-body">
-        <h2 class="project-title">Sensibilisation</h2>
+        <h2 class="project-title">{{item?.title}}</h2>
       </div>
     </article>
   </div>

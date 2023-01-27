@@ -1,5 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import {LoadService} from "../../services/load.service";
 
+interface Data {
+  greeting:{
+    title:string;
+    description:string;
+    button:string;
+  };
+}
 @Component({
   selector: 'app-greeting',
   templateUrl: './greeting.component.html',
@@ -7,7 +15,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GreetingComponent implements OnInit {
 
-  constructor() { }
+  data: Data | undefined
+  constructor(private service: LoadService) {
+    this.data = this.service.loadData()
+  }
 
   ngOnInit(): void {
   }

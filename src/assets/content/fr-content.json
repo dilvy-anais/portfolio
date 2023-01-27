@@ -5,6 +5,124 @@
     "contact"
   ],
   "greeting": {
+    "title": "Salut, moi c'est Anais!",
+    "description": "J'ai 22 ans, je me suis faite hacker en 2016 et depuis mon truc c'est la cybersécurité.",
+    "button": "voir plus"
+  },
+  "project": [
+    {
+      "title": "Kesako",
+      "type": "sensibilisation",
+      "image": "assets/img/sensibilisation.jpg",
+      "description": "",
+      "institution": "Safran Helicopter Engines",
+      "technologies": [
+        ""
+      ],
+      "team": {
+        "coworker": 2,
+        "function": "leader",
+        "duration": "2 months"
+      },
+      "style": {
+        "area" : "1 / 3 / 2 / 4 "
+      }
+    },
+    {
+      "title": "Veille",
+      "type": "veille",
+      "image": "assets/img/veille.jpg",
+      "description": "",
+      "institution": "Safran Helicopter Engines",
+      "technologies": [
+        ""
+      ],
+      "team": {
+        "coworker": 1,
+        "function": "leader",
+        "duration": "2 months"
+      },
+      "style": {
+        "area" : "2 / 3 / 3 / 4 "
+      }
+    },
+    {
+      "title": "Malware",
+      "type": "veille",
+      "image": "assets/img/security.jpg",
+      "description": "",
+      "institution": "CY-Tech",
+      "technologies": [
+        ""
+      ],
+      "team": {
+        "coworker": 1,
+        "function": "leader",
+        "duration": "2 months"
+      },
+      "style" :
+      {
+        "area": " 3 / 1 / 4 / 2"
+      }
+    },
+    {
+      "title": "Recherche",
+      "type": "veille",
+      "image": "assets/img/devops.jpg",
+      "description": "",
+      "institution": "Safran Helicopter Engines",
+      "technologies": [
+        ""
+      ],
+      "team": {
+        "coworker": 1,
+        "function": "leader",
+        "duration": "2 months"
+      },
+      "style" :
+      {
+        "area": " 1 / 1 / 3 / 3"
+      }
+    },
+    {
+      "title": "Developpement",
+      "type": "developpement",
+      "image": "assets/img/dev.jpg",
+      "description": "",
+      "institution": "Latécoère",
+      "technologies": [
+        ""
+      ],
+      "team": {
+        "coworker": 1,
+        "function": "leader",
+        "duration": "2 months"
+      },
+      "style" :
+      {
+        "area": " 3 / 2 / 4 / 3"
+      }
+    },
+    {
+      "title": "Maintenance",
+      "type": "developpement",
+      "image": "assets/img/setting.jpg",
+      "description": "",
+      "institution": "Safran Helicopter Engines",
+      "technologies": [
+        ""
+      ],
+      "team": {
+        "coworker": 1,
+        "function": "leader",
+        "duration": "2 months"
+      },
+      "style" :
+      {
+        "area": " 3 / 3 / 4 / 4"
+      }
+    }
 
-  }
+
+  ]
 }
