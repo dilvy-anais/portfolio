@@ -122,7 +122,11 @@
         "area": " 3 / 3 / 4 / 4"
       }
     }
-
-
-  ]
+  ],
+  "contact":
+  {
+    "title": "Contactez-moi!",
+    "description": "Mon profil vous intéresse, vous souhaitez me contacter ou même simplement me dire bonjour? Vous pouvez me contacter via ce formulaire de contact ou écrire à l'adresse dilvyanais@cy-tech.fr.",
+    "link": "Vous pouvez aussi me suivre sur mes réseaux sociaux:"
+  }
 }
