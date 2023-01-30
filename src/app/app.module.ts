@@ -6,8 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './section/header/header.component';
 import { GreetingComponent } from './section/greeting/greeting.component';
 import { ProjectComponent } from './section/project/project.component';
-
-
+import { ContactComponent } from './section/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +14,7 @@ import { ProjectComponent } from './section/project/project.component';
     HeaderComponent,
     GreetingComponent,
     ProjectComponent,
+    ContactComponent,
 
   ],
   imports: [
