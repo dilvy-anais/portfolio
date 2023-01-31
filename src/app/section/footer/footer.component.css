@@ -1,0 +1,12 @@
+footer {
+  display: table;
+  background-color: #F2E9DE;
+  color: #93614F;
+  height: 3rem;
+  text-align: center;
+  width: 100%;
+}
+span{
+  display: table-cell;
+  vertical-align: middle;
+}

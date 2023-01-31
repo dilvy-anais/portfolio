@@ -1,7 +1,7 @@
-<section>
+<section id="project-section">
   <h1>Mon travail</h1>
   <div id="all-project">
-    <article *ngFor="let item of data" class="project-card" style="grid-area:{{item.style.area}};">
+    <article *ngFor="let item of data" class="project-card" style="grid-area:{{item?.style?.area}};">
       <img class="project-img" src="{{item?.image}}">
       <div class="project-body">
         <h2 class="project-title">{{item?.title}}</h2>
