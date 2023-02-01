@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {LoadService} from "../../services/load.service";
+import {Router} from "@angular/router";
+
 
 interface Team{
   coworker:number;
@@ -10,6 +12,7 @@ interface Style {
   area: string;
 }
 interface Data {
+  id:number;
   title:string;
   type:string;
   image:string;
@@ -18,6 +21,8 @@ interface Data {
   technologies:Array<string>;
   team: Team;
   style:Style;
+  problem: string;
+  solution:string;
 
 }
 @Component({
@@ -28,11 +33,16 @@ interface Data {
 export class ProjectComponent implements OnInit {
 
   data: Array<Data> | undefined;
-  constructor(private service: LoadService) {
+  constructor(private service: LoadService,private router: Router) {
     this.data = this.service.loadData().project;
 
   }
 
+  onClick(projectID:number |undefined){
+     if(projectID!==undefined){
+       this.router.navigate(["project"],{ queryParams: { id: projectID }});
+     }
+  }
   ngOnInit(): void {
   }
 

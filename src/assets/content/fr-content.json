@@ -1,8 +1,8 @@
 {
   "header":[
-    "home",
-    "projet",
-    "contact"
+    ["home","home"],
+    ["projet","#project-section"],
+    ["contact","#contact-section"]
   ],
   "greeting": {
     "title": "Salut, moi c'est Anais!",
@@ -11,116 +11,136 @@
   },
   "project": [
     {
-      "title": "Kesako",
-      "type": "sensibilisation",
+      "id": 0,
+      "title": "Kesako Cyber",
+      "type": "Sensibilisation",
       "image": "assets/img/sensibilisation.jpg",
-      "description": "",
-      "institution": "Safran Helicopter Engines",
-      "technologies": [
-        ""
-      ],
-      "team": {
-        "coworker": 2,
-        "function": "leader",
-        "duration": "2 months"
-      },
-      "style": {
-        "area" : "1 / 3 / 2 / 4 "
-      }
-    },
-    {
-      "title": "Veille",
-      "type": "veille",
-      "image": "assets/img/veille.jpg",
-      "description": "",
+      "description": "Dans le cadre de mon alternance, j'ai eu l'opportunité de travailler sur la mise en forme des campagnes de sensibilisation à la cyber sécurité. Ce projet s'inscris dans la continuité de mon sujet d'alternance qui est d'aider les équipes de développement à migrer vers des méthodes DevSecOps",
       "institution": "Safran Helicopter Engines",
       "technologies": [
         ""
       ],
       "team": {
         "coworker": 1,
-        "function": "leader",
-        "duration": "2 months"
+        "function": "Experte Cyber",
+        "duration": "2 mois"
+      },
+      "style": {
+        "area" : "1 / 3 / 2 / 4 "
+      },
+      "problem": "Les séminaires de sensibilisation à la cyber sécurité sont dans la majorité des cas des réunions avec un intervenant qui va présenter un diaporame et intéragir avec son public. Ce format à défaut d'engager réellement le public est facile à mettre en place et à reproduire. Cependant l'objectif premier d'une sensibilisation est de changer les regards, les mentalités et les comportements à propos d'un sujet, il faut donc que le support de cette sensibilisation soit plus impactant. ",
+      "solution": "En communication avec les équipes de la SSI mais aussi par retour d'expérience des différents métiers et enfin avec mon expérience personnel, nous avons changer le format et le support de la sensibilisation à la cyber sécurité de l'entreprise afin de le rendre plus impactant. "
+    },
+    {
+      "id": 1,
+      "title": "Mindmap",
+      "type": "Développement",
+      "image": "assets/img/veille.jpg",
+      "description": "Dans le cadre de mon alternance j'ai été amenée à développer un outils permettant de visualiser le SI de l'entreprise. L'objectif étant d'améliorer la réactivité des services face aux failles de sécurité et de diminuer le phénomène de  Shadow IT. Cet outils fait suite au sujet principal de mon alternance, qui est d'aider les équipes de développement à migrer vers des méthodes DevSecOps.",
+      "institution": "Safran Helicopter Engines",
+      "technologies": [
+        "NodeJS",
+        "Angular",
+        "MySQL"
+      ],
+      "team": {
+        "coworker": 1,
+        "function": "Développeuse",
+        "duration": "6 mois"
       },
       "style": {
         "area" : "2 / 3 / 3 / 4 "
-      }
+      },
+      "problem": "Lorsque le système d'information d'une entreprise devient conséquent, il est de plus en plus compliqué de comprendre quels sont les outils qui sont mis a disposition des équipes, et quels outils sont utilisés par les différents services. Cette complexité entraine, au mieux à la redondance, lorsque plusieurs outils permettent de faire la même chose, au pire au Shadow IT, cette pratique qui pousse les équipes à utiliser/installer des outils qui ne sont pas dans le référentiel de l'entreprise. La redondance, implique une augmentation de la surface d'attaque du SI. Tandis que le Shadow IT, en plus d'augmenter la surface d'attaque, remet en cause la sécurité de tout le SI. A terme, cela peut remettre en cause la réactivité des équipes SSI face aux cyberattaques et donc augmenter les conséquences de ces dernières.",
+      "solution": "Pour pallier cette complexité, une des solutions consiste à simplifier la visualisation  du SI et offrir un moteur de recherche efficace dans la CMDB. Cela permettrait de rapidemment comprendre le rôle de chaque outils au sein de chaque service et de connaître en cas d'attaque quel sont les services touchés. Il s'agit donc de créer une véritable plateforme de visualisation et idéalement de mise à jours de la CMDB. J'ai eu la chance de travailler à la création et l'implémentation de cette plateforme en tant que développeuse."
     },
     {
+      "id": 2,
       "title": "Malware",
-      "type": "veille",
+      "type": "Développement-Cybersécurité",
       "image": "assets/img/security.jpg",
-      "description": "",
+      "description": "Dans le cadre de ma dernière année d'étude, j'ai eu l'occasion de développer, un malware de type beacon dans le langage Rust",
       "institution": "CY-Tech",
       "technologies": [
         ""
       ],
       "team": {
-        "coworker": 1,
-        "function": "leader",
-        "duration": "2 months"
+        "coworker": 4,
+        "function": "Développeuse",
+        "duration": "1 mois"
       },
       "style" :
       {
         "area": " 3 / 1 / 4 / 2"
-      }
+      },
+      "problem": "Un beacon est un script malveillant qui une fois installé sur l'ordinateur initie une channel de communication jusqu'à l'ordinateur maitre permettant ainsi de recevoir des command et en renvoyer le résultat de ces dernières.",
+      "solution": "A la fin du projet, nous avions réussi à développer un script persistent, dont les communications étaient chiffrées, qui permettait d'executer directement un script en RAM, et qui pouvait s'auto détruire soit sur commande soit au bout de 3 jours successifs d'inactivités de la part du serveur distant. "
     },
     {
-      "title": "Recherche",
-      "type": "veille",
+      "id": 3,
+      "title": "DevSecOps",
+      "type": "Recherche",
       "image": "assets/img/devops.jpg",
-      "description": "",
+      "description": "Il s'agit là de mon sujet principal d'alternance. Ce projet à pour but d'établir un plan d'action concernant l'intégration des méthodes DevSecOps dans l'entreprise.",
       "institution": "Safran Helicopter Engines",
       "technologies": [
         ""
       ],
       "team": {
         "coworker": 1,
-        "function": "leader",
-        "duration": "2 months"
+        "function": "Experte Cyber",
+        "duration": "1 an"
       },
       "style" :
       {
         "area": " 1 / 1 / 3 / 3"
-      }
+      },
+      "problem": "Sécuriser une application juste avant sa mise en production ou même après sa mise en production est contre-productif. Dans le meilleurs des cas, il s'agit de simple correctif, mais le plus souvent cela engendre des retard de livraisons considérables ou pire, la livraison d'applications vulnérables La sécurité doit être mis au coeur, dès le début et tout au long, du projet. ",
+      "solution": "Pour ce faire, nous avons expliqué les contraintes qui pesaient sur les équipes de développement et sur celle de la SSI. De ces explications nous avons tiré une marge d'amélioration  de la sécurité minimale et optimale du cycle de développement. Enfin nous avons chercher les différentes méthodes DevSecOps répondant à nos exigences et besoins et mis en place le plan d'action adéquat."
     },
     {
-      "title": "Developpement",
-      "type": "developpement",
+      "id": 4,
+      "title": "GSE",
+      "type": "Développement",
       "image": "assets/img/dev.jpg",
-      "description": "",
+      "description": "Création d'un logiciel de maintenance d'équipement IOT de jet privé.",
       "institution": "Latécoère",
       "technologies": [
         ""
       ],
       "team": {
-        "coworker": 1,
-        "function": "leader",
-        "duration": "2 months"
+        "coworker": 2,
+        "function": "Développeuse",
+        "duration": "5 mois"
       },
       "style" :
       {
         "area": " 3 / 2 / 4 / 3"
-      }
+      },
+      "problem": "L'entreprise développe tout une gamme d'équipement avionique connecté pour jet privé. Hors les équipements avionique sont soumis à des règles très strictes, interdisant la mise à jour en plein vol. Les appareils connecté doivent être mis à jours au sol, dans le centre de maintenance. Sachant qu'au centre de maintenance, il peut y avoir plusieurs jet privé contenant tous plusieurs appareils avec des configurations différentes, comment pouvons nous optimiser le temps de mise à jour des appareils ?",
+      "solution": "Pour pallier cette problématique nous avons créer un logiciel de maintenance permettant de détecter tous les appareils présent sur le réseaux, de modifer simultanément leur configuration et de les mettre à jours. Aujourd'hui ce projet est commercialisé au sein de l'entreprise."
     },
     {
+      "id": 5,
       "title": "Maintenance",
-      "type": "developpement",
+      "type": "Veille/Recherche",
       "image": "assets/img/setting.jpg",
-      "description": "",
+      "description": "Dans le cadre de mon alternance, en parallèle de mon sujet principal, j'ai pu travailler sur les problématiques de maintenance des exigences de sécurité sur du matériel obsolète",
       "institution": "Safran Helicopter Engines",
       "technologies": [
         ""
       ],
       "team": {
-        "coworker": 1,
-        "function": "leader",
-        "duration": "2 months"
+        "coworker": 3,
+        "function": "Experte Cyber",
+        "duration": "2 mois"
       },
       "style" :
       {
         "area": " 3 / 3 / 4 / 4"
-      }
+      },
+      "problem": "Il existe des logiciels dans l'entreprise qui sont essentiels aux différents services. Certains de ces logiciels, fautes d'alternatives ou de mise à jours de la part de l'éditeur sont obsolètes. Il devient alors compliqué de maintenir ces logiciels dans le système d'information de l'entreprise car il représente une menace en terme de sécurité. Cependant il n'est pas possible non plus de les retirer car ils sont essentiels au bon fonctionnement des différents services. IL faut donc maintenir les exigences de cybersécurité de l'entreprise sans paralyser les services.",
+      "solution": "Pour répondre à cette problématique nous avons dû mettre en place plan d'action dédiés à ces différents logiciels, les isoler un maximum dans le système d'information, recherchez des moyens pemrttant de détecter les vulnérabilités, écrire des procédures de gestion des risques, et surtout sensibiliser les services et comprendre leur contraintes."
     }
   ],
   "contact":
