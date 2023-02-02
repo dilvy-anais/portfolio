@@ -1,0 +1,56 @@
+<app-header></app-header>
+<section id="describe-section">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 290">
+    <path fill="#F2E9DE" fill-opacity="0.9" d="M0,256L30,229.3C60,203,120,149,180,122.7C240,96,300,96,360,128C420,160,480,224,540,218.7C600,213,660,139,720,133.3C780,128,840,192,900,197.3C960,203,1020,149,1080,112C1140,75,1200,53,1260,42.7C1320,32,1380,32,1410,32L1440,32L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z">
+    </path>
+  </svg>
+  <div id="project">
+    <h1>{{project?.title}}</h1>
+    <article id="project-information">
+      <table>
+        <tr>
+          <th>Entreprise:</th>
+          <td>{{project?.institution}}</td>
+        </tr>
+        <tr>
+          <th>Catégorie:</th>
+          <td>{{project?.type}}</td>
+        </tr>
+      </table>
+      <table class="infos">
+        <thead>
+          <tr>
+            <td>Equipe</td>
+            <td>Fonction</td>
+            <td>Durée</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{project?.team?.coworker}}</td>
+            <td>{{project?.team?.function}}</td>
+            <td>{{project?.team?.duration}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+    <article id="project-description">
+      <p>
+        {{project?.description}}
+      </p>
+    </article>
+  </div>
+</section>
+<section id="problem-solution">
+  <article>
+    <div id="problem">
+      <h2>Problème</h2>
+      <p>{{project?.problem}}</p>
+    </div>
+    <div id="solution">
+      <h2>Solution</h2>
+      <p>{{project?.solution}}</p>
+    </div>
+  </article>
+</section>
+<app-footer></app-footer>
