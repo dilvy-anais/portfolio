@@ -1,10 +1,77 @@
-section
-{
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: 1fr 6fr;
+@media screen and (min-width: 1200px) {
+
+  section
+  {
+    width: 80%;
+    margin:auto;
+    display: grid;
+
+  }
+
+  #all-project {
+    grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 0.1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    width: 100%;
+    padding: 0;
+    margin: auto;
+    height: 100%;
+  }
+
 }
+@media screen and (max-width: 1200px){
+
+  #all-project
+  {
+    grid-area: 2 / 2 / 3 / 3;
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows: repeat(6,1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    width:80%;
+    padding:0;
+    margin:auto;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 900px)  and (max-width: 1200px){
+
+  #all-project
+  {
+    grid-area: 2 / 2 / 3 / 3;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    width:80%;
+    padding:0;
+    margin:auto;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 900px){
+
+  #all-project
+  {
+    grid-area: 2 / 2 / 3 / 3;
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows: repeat(6,1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    width:80%;
+    padding:0;
+    margin:auto;
+    height: 100%;
+  }
+}
+
 h1
 {
   grid-area: 1 / 2 / 2 / 3;
@@ -13,34 +80,6 @@ h1
   font-family: "Bebas Neue",sans-serif;
   color:#93614F;
   margin:auto;
-}
-#all-project
-{
-  grid-area: 2 / 2 / 3 / 3;
-  display:grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(3,0.1fr);
-  grid-column-gap: 2rem;
-  grid-row-gap: 2rem;
-  width:100%;
-  padding:0;
-  margin:auto;
-  height: 100%;
-}
-.project-card
-{
-  width:100%;
-  position: relative;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border-radius: 15px;
-}
-.project-img
-{
-  height:100%;
-  width: 100%;
-  border-radius:15px;
-  object-fit: cover;
-  brightness:100%;
 }
 .project-body
 {
@@ -66,4 +105,18 @@ h1
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
 }
-
+.project-card
+{
+  width:100%;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 15px;
+}
+.project-img
+{
+  height:100%;
+  width: 100%;
+  border-radius:15px;
+  object-fit: cover;
+  brightness:100%;
+}
