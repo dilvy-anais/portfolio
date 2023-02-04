@@ -1,29 +1,54 @@
-section
+@media screen and (min-width:900px)
 {
-  height: calc(100% - 3rem);
-  width:100%;
-  display:grid;
-  grid-template-columns: 1fr 1.5fr;
-  grid-template-rows: 4fr 1fr;
-  background-image: url("../../../assets/img/hey.gif");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  align-items: center;
-  font-family: "Bebas Neue",sans-serif;
-  color: #93614F;
+  section
+  {
+    height: calc(100% - 3rem);
+    width:100%;
+    display:grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 4fr 1fr;
+    background-image: url("../../../assets/img/hey.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    align-items: center;
+    font-family: "Bebas Neue",sans-serif;
+    color: #93614F;
+  }
+  p{
+    font-size: 1.5rem;
+  }
 }
+@media screen and (max-width: 900px)
+{
+  section
+  {
+    height: calc(100% - 3rem);
+    width:100%;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 1fr;
+    background-color: #F2E9DE;
+    align-items: center;
+    font-family: "Bebas Neue",sans-serif;
+    color: #93614F;
+    text-align: center;
+  }
+  p{
+    font-size: 1.5rem;
+    width:80%;
+    margin:auto;
+  }
+}
+
 #greeting-section
 {
   grid-area: 1 / 2 / 2 / 3;
 }
 h1
 {
-
   font-size: 3rem;
 }
-p{
-  font-size: 1.5rem;
-}
+
 #greeting-button
 {
   grid-area: 2 / 1 / 3 / 3;

@@ -1,7 +1,7 @@
 <section id="project-section">
   <h1>Mon travail</h1>
   <div id="all-project">
-    <article *ngFor="let item of data" (click)="onClick(item?.id)" class="project-card" style="grid-area:{{item?.style?.area}};">
+    <article *ngFor="let item of data" (click)="onClick(item?.id)" class="project-card">
       <img class="project-img" src="{{item?.image}}">
       <div class="project-body">
         <h2 class="project-title">{{item?.type}}</h2>
