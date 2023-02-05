@@ -1,13 +1,5 @@
 @media screen and (min-width: 1200px) {
 
-  section
-  {
-    width: 80%;
-    margin:auto;
-    display: grid;
-
-  }
-
   #all-project {
     grid-area: 2 / 2 / 3 / 3;
     display: grid;
@@ -71,7 +63,14 @@
     height: 100%;
   }
 }
-
+section
+{
+  padding-top:1.5rem;
+  width: 80%;
+  margin:auto;
+  display: grid;
+  grid-row-gap: 1.5rem;
+}
 h1
 {
   grid-area: 1 / 2 / 2 / 3;
